@@ -4,17 +4,16 @@
 	xmlns="sap.m"
 	xmlns:mvc="sap.ui.core.mvc"
 >
-	<App id="app" height="90%" homeIcon="true" >
 		<Button
-			text="Say Hi"
+			text="{i18n>showHelloButtonText}"
 			id="txthello"
 			press=".onShowHello"
 		/>
 		<Input
+			value="{/recipient/name}"
+			description="Hello {/recipient/name}"
             id="inphellotext"
 			valueLiveUpdate="true"
-			width="40%"
+			width="60%"
 		/>
-		<Text text="Hello World" id="txt1"/>
-	</App>
 </mvc:View>

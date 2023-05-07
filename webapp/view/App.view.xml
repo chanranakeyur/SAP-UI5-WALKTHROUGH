@@ -15,5 +15,6 @@
             id="inphellotext"
 			valueLiveUpdate="true"
 			width="60%"
+			submit=".onShowHello"
 		/>
 </mvc:View>
